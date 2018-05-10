@@ -42,7 +42,7 @@ do
         continue
     fi
 
-    if [[ "${!var}" =~ ([a-zA-Z0-9]+):?([0-9]+)? ]]; then
+    if [[ "${!var}" =~ ([a-zA-Z0-9-]+):?([0-9]+)? ]]; then
         host="${BASH_REMATCH[1]}"
         port="${BASH_REMATCH[2]}"
     fi
